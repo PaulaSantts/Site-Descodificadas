@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header class="initial">
+
+        <h1 class="titulo">INSCREVA-SE NO CLUBE DE LEITURA JANE AUSTEN</h1>
+        <h2 class="texto item focus-in-expand">"Garanto que não há nada mais divertido que ler. Tudo cansa, menos um livro."</h2>
+        <h3 class="texto item focus-in-expand">Elizabeth Bennet</h3>
+    </header>
+
+    <form class="form-background">
+        <fieldset>
+            <legend>Formulário de Inscrição</legend>
+            <div class="ask">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="nome" placeholder="Digite o seu nome" required aria-label="Nome">
+            </div>
+            <br>
+
+            <div class="ask">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email" aria-label="Email">
+                <span title="Insira um endereço de email válido">*</span>
+            </div>
+            <br>
+
+            <div class="ask">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite o seu telefone" aria-label="Telefone">
+                <span title="Insira um número de telefone válido">*</span>
+            </div>
+            <br>
+
+            <div class="question ask">
+                <span>Você já leu o livro "Orgulho e Preconceito"?</span>
+                <input type="radio" name="question" id="sim1" value="sim" checked aria-label="Sim">
+                <label for="sim1">Sim</label>
+                <input type="radio" name="question" id="nao1" value="nao" aria-label="Não">
+                <label for="nao1">Não</label>
+            </div>
+            <br>
+
+            <div class="question ask">
+                <span>Você já assistiu o filme "Orgulho e Preconceito"?</span>
+                <input type="radio" name="question2" id="sim1" value="sim" checked aria-label="Sim">
+                <label for="sim1">Sim</label>
+                <input type="radio" name="question2" id="nao1" value="nao" aria-label="Não">
+                <label for="nao1">Não</label>
+            </div>
+            <br>
+
+            <div class="question ask">
+                <span>Você já leu algum livro de Jane Austen?</span>
+                <input type="radio" name="ask" id="sim2" value="sim" checked aria-label="Sim">
+                <label for="sim2">Sim</label>
+                <input type="radio" name="ask" id="nao2" value="nao" aria-label="Não">
+                <label for="nao2">Não</label>
+            </div>
+            <br>
+
+            <div class="ask">
+                <label for="message">Porque você quer fazer parte deste clube?</label>
+                <textarea name="message" required aria-label="Mensagem"></textarea>
+            </div>
+            <br>
+
+
+            <input type="submit" name="enviar" value="Enviar" aria-label="Enviar">
+        </fieldset>
+    </form>
+
+    <footer>
+        <h4>Copyright © 2023 - #descodificadas Eula Paula Ribeiro</h4>
+    </footer>
+</body>
+
+</html>

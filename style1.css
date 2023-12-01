@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('img/capa3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    /* Adiciona um espaçamento interno ao nav */
+}
+
+.logo img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 15px;
+    /* Reduz o espaçamento entre os itens do menu */
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #7f6000;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@keyframes focus-in-expand-fwd {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.title {
+    position: absolute;
+    bottom: 5%;
+    /* Ajusta a distância do bottom em porcentagem da altura da tela */
+    right: 2%;
+    /* Ajusta a distância do right em porcentagem da largura da tela */
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    z-index: 2;
+    animation: focus-in-expand-fwd 5s both;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Reduz a margem inferior do h1 */
+    font-size: 6vw;
+    /* Define o tamanho do texto em relação à largura da viewport */
+}
+
+h3 {
+    font-family: 'Dancing Script', Arial, Verdana, sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    margin-top: -25px;
+    /* Reduz a margem superior do h3 */
+    font-size: 5vw;
+    /* Define o tamanho do texto em relação à largura da viewport */
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(177, 139, 91);
+    padding: 5px;
+    /* Adiciona um espaçamento interno ao footer */
+}

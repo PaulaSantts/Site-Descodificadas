@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+body {
+    height: 50vh;
+    box-sizing: border-box;
+    background: #FFEEEE;
+    background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE);
+}
+
+
+/* Estilizando o formulário */
+
+.form-background {
+    position: relative;
+    padding: 50px;
+    margin: 10px;
+}
+
+.form-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/leitura.jpg');
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+form {
+    max-width: calc(100% - 40px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilizando os campos de entrada */
+
+label,
+textarea,
+input[type="submit"] {
+    display: block;
+}
+
+
+/* Estilizando os radio buttons e rótulos */
+
+.question {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+input[type="radio"],
+label {
+    display: inline-block;
+    /* Coloca os elementos lado a lado */
+    margin-right: 10px;
+}
+
+.question input[type="radio"] {
+    margin-left: 20px;
+}
+
+
+/* Limpa a lista de estilos padrão para radio buttons e labels */
+
+input[type="radio"],
+label {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 50%;
+    margin: 20px 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    padding: 20px;
+}
+
+
+/* Estilizando o botão de envio */
+
+input[type="submit"] {
+    margin: auto;
+    /* Centraliza o botão */
+}
+
+.item {
+    z-index: 2;
+}
+
+.initial,
+.title,
+.title img,
+#livro-container {
+    height: 100%;
+}
+
+.initial,
+.inicio,
+.title {
+    position: relative;
+}
+
+.inicio,
+#livro img,
+.secao img,
+.imagem {
+    height: auto;
+}
+
+.title,
+.assunto,
+.tema {
+    justify-content: center;
+}
+
+.title,
+.text,
+#livro-container {
+    align-items: center;
+}
+
+.title img,
+#livro,
+#livro-container {
+    width: 100%;
+}
+
+.title img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.text,
+.conteudo,
+.title,
+#livro-container,
+.imagens {
+    display: flex;
+}
+
+.secao {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.secao img {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    /* Centraliza a imagem */
+}
+
+.btn,
+input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #7f6000;
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+.btn:active,
+input[type="submit"] {
+    scale: 0.92;
+}
+
+.btn:hover,
+input[type="submit"]:hover {
+    /* ANIMAÇÃO DO BUTTON */
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+}
+
+.text {
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    z-index: 1;
+}
+
+.title h1,
+.title h3,
+.assunto,
+legend {
+    font-size: 4vw;
+}
+
+.title h1 {
+    margin-bottom: -10px;
+}
+
+.title h3 {
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+#livro {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#livro-container {
+    justify-content: space-between;
+}
+
+#livro p,
+.title h3,
+.texto,
+.tema,
+legend {
+    font-family: 'Dancing Script', sans-serif;
+}
+
+#livro p,
+.texto {
+    font-weight: normal;
+    font-size: 2vw;
+    color: rgb(5, 5, 5);
+    line-height: 1.5;
+    margin: 5px 0 auto;
+    text-align: justify;
+    padding-bottom: 28px;
+}
+
+#livro img {
+    display: block;
+    width: 27%;
+    margin-right: 5px;
+    margin-left: 25px;
+    margin-top: 37px;
+}
+
+#livro h2,
+.titulo,
+.tema,
+.secao h2 {
+    font-size: 3vw;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #7f6000;
+    border-top: 3px solid #7f6000;
+    padding: 5px 5px;
+}
+
+#livro h2,
+.titulo,
+.assunto,
+.tema,
+.secao h2,
+legend {
+    font-weight: bold;
+    color: #7f6000;
+}
+
+.focus-in-expand {
+    /* ANIMAÇÃO DO h2 DO INDEX3 */
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#livro h2,
+.title h1,
+.titulo,
+.assunto,
+.secao,
+.info,
+.info1,
+.ask,
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#livro img,
+.imagem,
+.video,
+.secao img,
+.grid-item img {
+    border: 3px solid #7f6000;
+}
+
+#box,
+.texto,
+.texto li {
+    text-align: justify;
+}
+
+.titulo,
+.assunto,
+.tema,
+.info,
+.secao>div,
+.grid-item,
+.item {
+    text-align: center;
+}
+
+.texto,
+.texto li {
+    padding: 5px;
+    margin: 10px 20px;
+}
+
+.imagens {
+    justify-content: space-evenly;
+}
+
+.imagem {
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.video {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas com largura igual */
+    gap: 10px;
+    /* Espaço entre as colunas e linhas */
+    margin-top: 30px;
+}
+
+.grid-item img {
+    width: 70%;
+    height: 70%;
+}
+
+
+/* Trecho de texto com plano de fundo colorido */
+
+.mark {
+    background-color: #7f6000;
+    color: #DDEFBB;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    color: #7f6000;
+    padding: 5px;
+    /* Adiciona um espaçamento interno ao footer */
+}
+
+footer:hover {
+    color: rgb(192, 159, 119);
+    cursor: pointer;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 600px) {
+    .title h1 {
+        font-size: 5vw;
+    }
+    .title h3 {
+        font-size: 8vw;
+    }
+    #livro p,
+    .texto {
+        font-size: 3.5vw;
+        padding-right: 5%;
+        padding-left: 10%;
+    }
+    #livro h2,
+    .titulo {
+        font-size: 4vw;
+    }
+    .imagem {
+        width: 30%;
+    }
+    .video {
+        width: 90%;
+    }
+}
